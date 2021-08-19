@@ -42,7 +42,7 @@ modules:
     build-parameters:
       ignore: ["default-env.json", "node_modules"]
 
-  - name: employee-approuter
+  - name: employee-app-router
     type: approuter.nodejs
     path: app-router
     requires:
