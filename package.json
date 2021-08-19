@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:cds": "cds2types --cds ./srv/company-service.cds --output ./src/company.ts",
     "build:db": "cds deploy --to sqlite.db --no-save",
     "cds:dev": "CDS_ENV=development NODE_ENV=development cds run",
     "dev": "nodemon"
