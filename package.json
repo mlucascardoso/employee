@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:db": "cds deploy --to sqlite.db --no-save"
   },
   "keywords": [],
   "author": "Lucas M Cardoso",

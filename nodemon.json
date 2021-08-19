@@ -1,0 +1,5 @@
+{
+    "watch": ["db", "srv"],
+    "ext": "csv, cds",
+    "exec": "npm run build:db && CDS_ENV=development NODE_ENV=development cds run"
+}
