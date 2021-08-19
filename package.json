@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:db": "cds deploy --to sqlite.db --no-save"
+    "build:db": "cds deploy --to sqlite.db --no-save",
+    "cds:dev": "CDS_ENV=development NODE_ENV=development cds run"
   },
   "keywords": [],
   "author": "Lucas M Cardoso",
