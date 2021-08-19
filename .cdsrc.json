@@ -5,17 +5,19 @@
     "hana": {
         "deploy-format": "hdbtable"
     },
+    "[production]": {
+        "requires": {
+            "db": {
+                "kind": "hana"
+            },
+            "uaa": {
+                "kind": "xsuaa"
+            }
+        }
+    },
     "requires": {
         "db": {
-            "[development]": {
-                "kind": "sqlite"
-            },
-            "[production]": {
-                "kind": "hana"
-            }
-        },
-        "uaa": {
-            "kind": "xsuaa"
+            "kind": "sqlite"
         }
-    }
+    }    
 }
