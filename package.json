@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build:db": "cds deploy --to sqlite.db --no-save",
-    "cds:dev": "CDS_ENV=development NODE_ENV=development cds run"
+    "cds:dev": "CDS_ENV=development NODE_ENV=development cds run",
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "Lucas M Cardoso",
@@ -19,10 +20,15 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "@sap/audit-logging": "^5.1.0",
     "@sap/cds": "^5.4.3",
+    "@sap/hana-client": "^2.9.28",
+    "@sap/xsenv": "^3.1.1",
+    "@sap/xssec": "^3.2.2",
     "cds-routing-handlers": "^3.0.5",
     "express": "^4.17.1",
     "npm-run-all": "^4.1.5",
+    "passport": "^0.4.1",
     "reflect-metadata": "^0.1.13"
   }
 }
